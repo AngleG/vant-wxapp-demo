@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "参加的访谈",
+  "backgroundTextStyle": "dark",
+  "backgroundColor": "#F7F7F7",
+  "enablePullDownRefresh": true,
+  "usingComponents": {}
+}

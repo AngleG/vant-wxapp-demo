@@ -1,0 +1,44 @@
+/* src/pages/login/login.wxss */
+.login{
+  text-align: center;
+  .logo{
+    padding-top: 130rpx;
+    image{
+      width: 290rpx;
+      height: 92rpx;
+      margin-bottom: 10rpx;
+    }
+  }
+  text{
+    color: #9E9DAB;
+    font-size: 32rpx;
+    line-height: 36rpx;
+  }
+  .login-btn{
+    padding: 0 80rpx;
+    margin-top: 240rpx;
+    margin-bottom: 432rpx;
+    .btn{
+      width: 100%;
+      height: 76rpx;
+      line-height: 76rpx;
+      background: #003B83;
+      border-radius: 10rpx;
+      margin-bottom: 18rpx;
+      color: #FFFFFF;
+      font-size: 32rpx;
+    }
+    view{
+      font-size: 24rpx;
+      color: #9E9DAB;
+    }
+  }
+  .agreement{
+    font-size: 22rpx;
+    color: #9E9DAB;
+    navigator{
+      display: inline-block;
+      color: #003B83;
+    }
+  }
+}

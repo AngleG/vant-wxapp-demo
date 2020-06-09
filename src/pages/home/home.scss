@@ -1,0 +1,78 @@
+page{
+  background-color: #F7F7F7;
+}
+.home{
+  .home-header{
+    width: 100%;
+    padding: 30rpx 24rpx;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    background: #fff;
+    .info{
+      padding-top: 12rpx;
+    }
+    image{
+      width: 104rpx;
+      height: 104rpx;
+      border-radius: 50%;
+      margin-right: 20rpx;
+    }
+    .name{
+      font-size: 32rpx;
+      color: #2F3757;
+      line-height: 36rpx;
+      margin-top: 10rpx;
+      margin-bottom: 5rpx;
+    }
+    .tip{
+      font-size: 26rpx;
+      color: #9E9DAB;
+      line-height: 36rpx;
+    }
+  }
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20rpx 24rpx;
+    view{
+      position: relative;
+      width: 340rpx;
+      height: 290rpx;
+      background: #fff;
+      text-align: center;
+      margin-bottom: 20rpx;
+      padding-top: 65rpx;
+      box-sizing: border-box;
+      border-radius: 10rpx;
+      icon{
+        font-size: 89rpx;
+        margin-bottom: 20rpx;
+      }
+      text{
+        display: block;
+        font-size: 32rpx;
+        color: #2F3757;
+        line-height: 36rpx;
+      }
+      i{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70rpx;
+        height: 35rpx;
+        line-height: 35rpx;
+        background-color: #F55151;
+        font-size: 20rpx;
+        color: #fff;
+      }
+      .icon20_muyue{ color: #E8551F; }
+      .icon_zhundl{ color: #118EEA; }
+      .icon_myshouq{ color: #F39927; }
+      .icon_zhanghumx{ color: #AC52E7; }
+      .icon18_sucai{ color: #54C381; }
+      .icon_shouquan{ color: #FF6360; }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<!--src/pages/home/home.wxml-->
+<view class="home">
+    <view class="home-header">
+        <image src="{{userInfo.avatarUrl}}" alt="" mode="cover"></image>
+        <view class="info">
+            <view class="name">{{userInfo.nickName}}</view>
+            <view class="tip">最近一笔到账时间：2020/04/09</view>
+        </view>
+    </view>
+    <view class="content">
+        <view bind:tap="navigateToPage" data-link="income">
+            <icon class="iconfont icon20_muyue"></icon>
+            <text>我的收入</text>
+        </view>
+        <view bind:tap="navigateToPage" data-link="activities">
+            <icon class="iconfont icon_zhundl"></icon>
+            <text>参加的访谈</text>
+        </view>
+        <view>
+            <icon class="iconfont icon_myshouq"></icon>
+            <text>个人信息</text>
+        </view>
+        <view>
+            <i>待完善</i>
+            <icon class="iconfont icon_zhanghumx"></icon>
+            <text>收款信息</text>
+        </view>
+        <view>
+            <icon class="iconfont icon18_sucai"></icon>
+            <text>合作流程</text>
+        </view>
+        <view>
+            <icon class="iconfont icon_shouquan"></icon>
+            <text>关于智讯</text>
+        </view>
+    </view>
+</view>

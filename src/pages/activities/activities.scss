@@ -1,0 +1,81 @@
+page{
+  background-color: #F7F7F7;
+}
+.activities{
+  padding: 20rpx 24rpx;
+  .activity-item{
+    position: relative;
+    background-color: #fff;
+    padding: 55rpx 20rpx 25rpx 20rpx;
+    margin-bottom: 20rpx;
+    border-radius: 10rpx;
+    overflow: hidden;
+    i.type{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 110rpx;
+      height: 40rpx;
+      line-height: 40rpx;
+      background-color: #409EFF;
+      color: #fff;
+      font-size: 22rpx;
+      text-align: center;
+      border-radius: 0 0 10rpx 0;
+    }
+    i.status{
+      position: absolute;
+      top: 50rpx;
+      right: 20rpx;
+      width: 125rpx;
+      height: 51rpx;
+      line-height: 51rpx;
+      text-align: center;
+      font-size: 28rpx;
+      border-radius: 10rpx;
+      &.color_20{ color: #FF8A00}
+      &.color_30{ color: #54C381}
+      &.color_40{ color: #A7A7A7}
+      &.color_50{ color: #A7A7A7}
+      &.color_60{ color: #A47332}
+    }
+    view{
+      line-height: 36rpx;
+      font-size: 32rpx;
+      margin-bottom: 20rpx;
+      .label{
+        color: #9E9DAB;
+      }
+      .field{
+        color: #2F3757;
+      }
+      .color-blue{
+        color: #409EFF;
+      }
+      .color-orange{
+        color: #FF8A00;
+      }
+    }
+    .operate{
+      position: absolute;
+      bottom: 30rpx;
+      right: 20rpx;
+      font-size: 26rpx;
+      line-height: 36rpx;
+      margin-bottom: 0;
+      .color_brown{
+        color: #A47332;
+      }
+      icon{
+        margin-left: 10rpx;
+        vertical-align: top;
+      }
+      .color_gray{
+        color: #9E9DAB;
+      }
+    }
+  }
+  .loading{
+    text-align: center;
+  }
+}

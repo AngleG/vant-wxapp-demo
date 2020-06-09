@@ -1,0 +1,114 @@
+.income{
+  .income-total{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-top: 1px solid #F7F7F7;
+    .total-item{
+      width: 50%;
+      height: 180rpx;
+      text-align: center;
+      color: #2F3757;
+      padding-top: 20rpx;
+      box-sizing: border-box;
+      position: relative;
+      view{
+        font-size: 60rpx;
+        font-weight: bold;
+        margin-bottom: 8rpx;
+      }
+      text{
+        font-size: 28rpx;
+        color: #9E9DAB;
+      }
+      &.line:after{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        content: '';
+        width: 1px;
+        height: 115rpx;
+        background-color: #E7E7EB;
+        overflow: hidden;
+        clear: both;
+      }
+    }
+  }
+  .income-detail{
+    padding: 0 24rpx;
+    .classify{
+      height: 70rpx;
+      line-height: 70rpx;
+      background-color: #F7F7F7;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding: 0 24rpx;
+      margin-left: -24rpx;
+      margin-right: -24rpx;
+    }
+    .title{
+      font-size: 28rpx;
+      color: #2F3757;
+    }
+    .van-dropdown-menu{
+      height: 70rpx;
+      background-color: #F7F7F7;
+    }
+    .item-list{
+      padding: 35rpx 0;
+      border-bottom: 1px solid #F8F8F8;
+      &:after{
+        display: table;
+        content: '';
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        clear: both;
+      }
+      .icon{
+        float: left;
+        width: 58rpx;
+        height: 58rpx;
+        line-height: 58rpx;
+        text-align: center;
+        color: #ffffff;
+        margin-right: 15rpx;
+        border-radius: 50%;
+      }
+      .color-blue{
+        background-color: #003B83;
+      }
+      .color-orange{
+        background-color: #E8551F;
+      }
+      .detail{
+        float: left;
+        max-width: 435rpx;
+        view{
+          line-height: 36rpx;
+        }
+        .payer{
+          font-size: 32rpx;
+          color: #2F3757;
+        }
+        .type{
+          font-size: 26rpx;
+          color: #2F3757;
+          margin-bottom: 5rpx;
+        }
+        .date{
+          font-size: 24rpx;
+          color: #9E9DAB;
+        }
+      }
+      .account{
+        float: right;
+        font-size: 40rpx;
+        font-weight: bold;
+        color: #FF8A00;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<!--src/pages/login/login.wxml-->
+<view class="login">
+  <view class="logo">
+    <image src="../../assets/images/logo@2x.png" ></image>
+  </view>
+  <text>连接全球行业专家交流分享</text>
+  <view class="login-btn">
+    <button wx:if="{{!hasUserInfo && canIUse}}" class="btn" open-type="getUserInfo" bindgetuserinfo="getUserInfoHandle">微信登录</button>
+    <button wx:if="{{hasUserInfo && !phoneNumber}}" class="btn" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumberHandle">绑定手机号</button>
+    <view>仅支持微信登录，暂未开放注册及其他登录方式</view>
+  </view>
+  <view class="agreement">登录即代表你同意亚商智讯<navigator url="../../pages/test/test">《服务协议》</navigator></view>
+  <van-toast id="van-toast" />
+</view>

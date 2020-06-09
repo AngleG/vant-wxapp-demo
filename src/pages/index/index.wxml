@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <van-button type="primary" size="small" round color="#008080" bind:tap="showDialog">按 钮</van-button>
+  <view class="icon-list">
+    <view>
+      <van-icon name="star" color="orange" />
+    </view>
+    <view>
+      <van-icon name="like" color="red" />
+    </view>
+    <view>
+      <van-icon name="star" color="orange" />
+    </view>
+  </view>
+  <icon class="iconfont iconwode1"></icon>
+  <icon class="iconfont iconxingtaiduICON_sousuo---copy"></icon>
+  <van-dialog
+    use-slot
+    title="标题"
+    customStyle="text-align:center;"
+    show="{{ isShowDialog }}"
+    show-cancel-button
+    confirm-button-open-type="getUserInfo"
+    bind:close="onCloseDialog"
+    bind:getuserinfo="getUserInfo">
+    <view>hello ya~</view>
+  </van-dialog>
+</view>

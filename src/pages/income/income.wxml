@@ -1,0 +1,30 @@
+<view class="income">
+    <view class="income-total">
+        <view class="total-item line">
+            <view>30000</view>
+            <text>累计总收入(元)</text>
+        </view>
+        <view class="total-item">
+            <view>1456</view>
+            <text>最近一笔收入(元)</text>
+        </view>
+    </view>
+    <view class="income-detail">
+        <view class="classify">
+            <view class="title">收入明细</view>
+            <van-dropdown-menu>
+                <van-dropdown-item value="{{searchTime}}" options="{{options}}"></van-dropdown-item>
+            </van-dropdown-menu>
+        </view>
+        <view class="item-list" wx:for="{{itemList}}" wx:key="index">
+            <view class="icon {{item.type === 10 ? 'color-blue' : 'color-orange'}}">{{ item.type === 10 ? '咨' : '推'}}</view>
+            <view class="detail">
+                <view class="payer">{{item.title}}</view>
+                <view class="type">——{{item.type === 10 ? item.activityTime : ''}}{{item.type === 10 ? ' 咨询费' : '推荐费'}}</view>
+                <view class="date">{{item.date}}</view>
+            </view>
+            <view class="account">+{{item.account}}</view>
+        </view>
+    </view>
+
+</view>
