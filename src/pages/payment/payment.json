@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "选择收款方式",
+  "usingComponents": {
+    "edit-payment": "../../components/edit-payment/edit-payment"
+  }
+}

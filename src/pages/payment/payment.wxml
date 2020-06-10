@@ -1,0 +1,20 @@
+<view class="payment">
+    <block wx:if="{{!paymentInfo && step === 1}}">
+        <view class="tip">完善您的收款信息，用于访谈结束后，我们向您支付访谈 酬劳及代缴个税。</view>
+        <view class="payment-method">
+            <radio-group bindchange="radioChange">
+                <label class="weui-cell" wx:for="{{paymentList}}" wx:key="index">
+                    <view>
+                        <radio class="weui-radio" value="{{item.value}}" color="#003B83"/>
+                    </view>
+                    <view class="weui-cell__bd">{{item.name}}</view>
+                </label>
+            </radio-group>
+        </view>
+        <button class="next-btn" bind:tap="nextStepHandle">下一步</button>
+        <button class="step-btn" bind:tap="skipHandle">跳过</button>
+    </block>
+    <block wx:if="{{step === 2}}">
+        <edit-payment></edit-payment>
+    </block>
+</view>

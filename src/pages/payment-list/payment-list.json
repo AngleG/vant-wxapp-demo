@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "edit-payment": "../../components/edit-payment/edit-payment"
+  },
+  "navigationBarTitleText": "收款信息"
+}

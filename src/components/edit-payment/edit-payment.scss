@@ -1,0 +1,62 @@
+page{
+  background-color: #F7F7F7;
+}
+.edit-payment{
+  .type{
+    font-size: 28rpx;
+    color: #9E9DAB;
+    line-height: 36rpx;
+    margin: 20rpx 0 10rpx 0;
+  }
+  .form-box{
+    border-radius: 10rpx;
+    .form{
+      display: block;
+      view{
+        height: 108rpx;
+        padding: 30rpx 20rpx;
+        border-bottom: 1px solid #F8F8F8;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        text{
+          float: left;
+          font-size: 30rpx;
+          color: #9E9DAB;
+        }
+        .weui-input{
+          text-align: right;
+          font-size: 30rpx;
+          color: #2F3757;
+          padding-left: 10rpx;
+        }
+        .weui-placeholder{
+          color: #2F3757;
+        }
+      }
+      .weui-switch{
+        position: absolute;
+        right: 0;
+        top: 20rpx;
+        transform: scale(0.5);
+        z-index: 9;
+      }
+      .btn-area{
+        height: auto;
+        margin-top: 210rpx;
+        background-color: #F7F7F7;
+        .submit-btn{
+          height: 76rpx;
+          background-color: #003B83;
+          font-size: 32rpx;
+          margin-bottom: 20rpx;
+        }
+        .cancel-btn{
+          height: 76rpx;
+          border: none;
+          color: #2F3757;
+          font-size: 32rpx;
+        }
+      }
+    }
+  }
+}

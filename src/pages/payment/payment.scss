@@ -1,0 +1,47 @@
+page{
+  background-color: #F7F7F7;
+}
+.payment{
+  padding: 0 24rpx;
+  .tip{
+    padding: 20rpx 0;
+    font-size: 28rpx;
+    line-height: 36rpx;
+    color: #9E9DAB;
+  }
+  .payment-method{
+    margin-bottom: 360rpx;
+  }
+  .weui-cell{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 28rpx 20rpx;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+    .weui-radio{
+      width: 26rpx;
+      height: 26rpx;
+      transform: scale(0.5);
+    }
+  }
+  .weui-cell__bd{
+    font-size: 32rpx;
+    color: #2F3757;
+    margin-left: 20rpx;
+  }
+  .next-btn{
+    height: 76rpx;
+    background-color: #003B83;
+    color: #fff;
+    font-size: 32rpx;
+    margin-bottom: 20rpx;
+  }
+  .step-btn{
+    height: 76rpx;
+    background-color: #fff;
+    color: #2F3757;
+    font-size: 32rpx;
+  }
+}

@@ -5,7 +5,9 @@
     "pages/logs/logs",
     "pages/home/home",
     "pages/activities/activities",
-    "pages/income/income"
+    "pages/income/income",
+    "pages/payment/payment",
+    "pages/payment-list/payment-list"
   ],
   "window": {
     "backgroundTextStyle": "light",

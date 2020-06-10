@@ -20,7 +20,7 @@
             <icon class="iconfont icon_myshouq"></icon>
             <text>个人信息</text>
         </view>
-        <view>
+        <view bind:tap="navigateToPage" data-link="payment">
             <i>待完善</i>
             <icon class="iconfont icon_zhanghumx"></icon>
             <text>收款信息</text>

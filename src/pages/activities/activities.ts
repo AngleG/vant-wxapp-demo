@@ -17,7 +17,7 @@ Page({
         ACTIVITY_STATUS_COLOR: ACTIVITY_STATUS_COLOR
     },
     onLoad(){
-        const { activityStatus, activityType, currency } = getApp().globalData;
+        const { activityStatus, activityType, currency } = getApp().globalData.configuration;
         this.setData({
             activityStatus: activityStatus,
             activityType: activityType,
