@@ -1,0 +1,5 @@
+<view class="add-payment">
+    <edit-payment payment-type="{{paymentType}}">
+        <button class="cancel-btn" bind:tap="cancelHandle">取消</button>
+    </edit-payment>
+</view>

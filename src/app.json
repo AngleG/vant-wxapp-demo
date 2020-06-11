@@ -7,6 +7,7 @@
     "pages/activities/activities",
     "pages/income/income",
     "pages/payment/payment",
+    "pages/add-payment/add-payment",
     "pages/payment-list/payment-list"
   ],
   "window": {

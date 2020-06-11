@@ -3,7 +3,7 @@
         <view wx:for="{{paymentList}}" wx:key="index">
             <view class="title">
                 <view>{{item.type === 10 ? '银行卡' : '支付宝'}}<text wx:if="{{item.isDefault}}">【默认】</text></view>
-                <text bind:tap="editHandle" data-id="{{item.id}}">编辑</text>
+                <text bind:tap="editHandle" data-id="{{item.id}}" data-type="{{item.type}}">编辑</text>
             </view>
             <view class="detail">
                 <view class="detail-item">
@@ -37,7 +37,9 @@
             <text>新增收款方式</text>
         </view>
     </block>
-    <block wx:if="{{isEdit}}">
-        <edit-payment payment-id="{{paymentId}}"></edit-payment>
-    </block>
+    <view class="customize-edit-payment" wx:if="{{isEdit}}">
+        <edit-payment payment-id="{{paymentId}}" payment-type="{{paymentType}}">
+            <button class="cancel-btn" bind:tap="cancelHandle">取消</button>
+        </edit-payment>
+    </view>
 </view>

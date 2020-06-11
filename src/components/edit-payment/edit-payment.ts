@@ -1,6 +1,7 @@
 Component({
     properties: {
-        paymentId: Number
+        paymentId: Number,
+        paymentType: Number,
     },
     data: {
         detailInfo: {
@@ -8,9 +9,9 @@ Component({
             idcard: '',
             bankNumber: '',
             subBranch: '',
+            alipayCode: '',
             isDefault: false
         },
-        test: 0
     },
     lifetimes: {
         // 组件实例刚刚被创建好时
@@ -31,17 +32,18 @@ Component({
         }
     },
     observers: {
-      'paymentId': function (val) {
-          console.log(val, '监听paymentId变化');
-          if (val) {
+      'paymentId, paymentType': function (id, type) {
+          console.log(id, '监听paymentId变化', type, '--type');
+          if (id) {
             // 根据id获取收款信息详情
               const newData = {
                   name: '123',
                   idcard: '41140319930406',
                   bankNumber: '6217002430001230265',
                   subBranch: '建设银行',
+                  alipayCode: '15738893656',
                   isDefault: true,
-              }
+              };
             this.setData({
                 detailInfo: newData
             })
@@ -56,11 +58,9 @@ Component({
                 url: '../../pages/payment-list/payment-list'
             })
         },
-        formReset(e) {
-            console.log('form发生了reset事件，携带数据为：', e.detail.value);
-            // this.setData({
-            //     chosen: ''
-            // })
-        }
+        // cancelHandle(){
+        //     console.log('返回上一页面');
+        //     wx.navigateBack();
+        // }
     }
 });
