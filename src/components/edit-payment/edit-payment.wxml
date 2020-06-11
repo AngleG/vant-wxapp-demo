@@ -4,23 +4,23 @@
         <form class="form" bindsubmit="formSubmit" bindreset="formReset">
             <view>
                 <text>真实姓名</text>
-                <input class="weui-input" name="name" placeholder="请输入您的真实姓名" placeholder-class="weui-placeholder" />
+                <input class="weui-input" name="name" value="{{detailInfo.name}}" placeholder="请输入您的真实姓名" placeholder-class="weui-placeholder" />
             </view>
             <view>
                 <text>证件号码</text>
-                <input class="weui-input" type="idcard" name="idcard" placeholder="请输入您的身份证号码" placeholder-class="weui-placeholder" />
+                <input class="weui-input" type="idcard" name="idcard" value="{{detailInfo.idcard}}" placeholder="请输入您的身份证号码" placeholder-class="weui-placeholder" />
             </view>
             <view>
                 <text>银行卡号</text>
-                <input class="weui-input" type="number" name="bankNumber" placeholder="请输入您的银行卡号" placeholder-class="weui-placeholder" />
+                <input class="weui-input" type="number" name="bankNumber" value="{{detailInfo.bankNumber}}" placeholder="请输入您的银行卡号" placeholder-class="weui-placeholder" />
             </view>
             <view>
                 <text>开户行及支行</text>
-                <input class="weui-input" name="subBranch" placeholder="请输入您银行卡所在开户行及支行" placeholder-class="weui-placeholder" />
+                <input class="weui-input" name="subBranch" value="{{detailInfo.subBranch}}" placeholder="请输入您银行卡所在开户行及支行" placeholder-class="weui-placeholder" />
             </view>
             <view style="position: relative;">
                 <text>设为默认收款账户</text>
-                <switch class="weui-switch" name="isDefault" color="#003B83"/>
+                <switch class="weui-switch" name="isDefault" checked="{{detailInfo.isDefault}}" color="#003B83"/>
             </view>
             <view class="btn-area">
                 <button class="submit-btn" type="primary" form-type="submit">保存</button>

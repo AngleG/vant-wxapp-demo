@@ -1,9 +1,9 @@
 <view class="payment-list">
     <block wx:if="{{paymentList && paymentList.length && !isEdit}}">
-        <view wx:for="{{paymentList}}">
+        <view wx:for="{{paymentList}}" wx:key="index">
             <view class="title">
                 <view>{{item.type === 10 ? '银行卡' : '支付宝'}}<text wx:if="{{item.isDefault}}">【默认】</text></view>
-                <text bind:tap="editHandle">编辑</text>
+                <text bind:tap="editHandle" data-id="{{item.id}}">编辑</text>
             </view>
             <view class="detail">
                 <view class="detail-item">
@@ -38,6 +38,6 @@
         </view>
     </block>
     <block wx:if="{{isEdit}}">
-        <edit-payment></edit-payment>
+        <edit-payment payment-id="{{paymentId}}"></edit-payment>
     </block>
 </view>
