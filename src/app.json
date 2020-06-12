@@ -8,7 +8,8 @@
     "pages/income/income",
     "pages/payment/payment",
     "pages/add-payment/add-payment",
-    "pages/payment-list/payment-list"
+    "pages/payment-list/payment-list",
+    "pages/personal/personal"
   ],
   "window": {
     "backgroundTextStyle": "light",

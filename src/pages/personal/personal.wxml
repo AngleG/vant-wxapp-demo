@@ -1,0 +1,14 @@
+<view class="personal">
+    <view class="personal-info weui-avatar">
+        <view class="label">头像</view>
+        <image class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+    <view class="personal-info">
+        <view class="label">昵称</view>
+        <view class="field">{{userInfo.nickName}}</view>
+    </view>
+    <view class="personal-info">
+        <view class="label">手机号</view>
+        <view class="field">{{userInfo.phoneNumber}}</view>
+    </view>
+</view>

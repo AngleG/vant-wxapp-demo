@@ -16,7 +16,7 @@
             <icon class="iconfont icon_zhundl"></icon>
             <text>参加的访谈</text>
         </view>
-        <view>
+        <view bind:tap="navigateToPage" data-link="personal">
             <icon class="iconfont icon_myshouq"></icon>
             <text>个人信息</text>
         </view>

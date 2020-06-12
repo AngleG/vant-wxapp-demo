@@ -1,0 +1,31 @@
+.personal{
+  padding: 0 24rpx;
+  .personal-info{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 108rpx;
+    padding: 30rpx 0;
+    border-bottom: 1px solid #F8F8F8;
+    box-sizing: border-box;
+    &.weui-avatar{
+      position: relative;
+    }
+    .avatar{
+      position: absolute;
+      right: 0;
+      top: 14rpx;
+      width: 80rpx;
+      height: 80rpx;
+      border-radius: 50%;
+    }
+    .label{
+      font-size: 32rpx;
+      color: #2F3757;
+    }
+    .field{
+      font-size: 32rpx;
+      color: #9E9DAB;
+    }
+  }
+}
