@@ -1,8 +1,6 @@
 {
   "pages": [
     "pages/login/login",
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/home/home",
     "pages/activities/activities",
     "pages/income/income",
@@ -11,7 +9,9 @@
     "pages/payment-list/payment-list",
     "pages/personal/personal",
     "pages/cooperation-process/cooperation-process",
-    "pages/about-us/about-us"
+    "pages/about-us/about-us",
+    "pages/index/index",
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",

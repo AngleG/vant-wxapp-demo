@@ -21,6 +21,11 @@ Page({
             })
         }
     },
+    onShow(){
+        if (wx.canIUse('hideHomeButton')) {
+            wx.hideHomeButton();
+        }
+    },
     navigateToPage(e: any){
        const link = e.currentTarget.dataset.link;
         wx.navigateTo({

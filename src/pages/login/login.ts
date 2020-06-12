@@ -34,11 +34,6 @@ Page({
             })
         }
     },
-    onShow(){
-        if (wx.canIUse('hideHomeButton')) {
-            wx.hideHomeButton();
-        }
-    },
     getUserInfoHandle(e: any){
         console.log(e, '获取用户信息');
         if(e.detail.userInfo){  // 授权通过
