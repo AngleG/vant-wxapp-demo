@@ -29,7 +29,7 @@
             <icon class="iconfont icon18_sucai"></icon>
             <text>合作流程</text>
         </view>
-        <view>
+        <view bind:tap="navigateToPage" data-link="about-us">
             <icon class="iconfont icon_shouquan"></icon>
             <text>关于智讯</text>
         </view>

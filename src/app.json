@@ -10,7 +10,8 @@
     "pages/add-payment/add-payment",
     "pages/payment-list/payment-list",
     "pages/personal/personal",
-    "pages/cooperation-process/cooperation-process"
+    "pages/cooperation-process/cooperation-process",
+    "pages/about-us/about-us"
   ],
   "window": {
     "backgroundTextStyle": "light",

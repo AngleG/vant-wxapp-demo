@@ -1,0 +1,27 @@
+.about-us{
+  padding: 0 24rpx;
+  font-size: 26rpx;
+  text-align: center;
+  .logo{
+    width: 190rpx;
+    height: 60rpx;
+    margin: 30rpx 0;
+  }
+  .introduce{
+    line-height: 38rpx;
+    color: #2F3757;
+    text-align: left;
+    margin-bottom: 50rpx;
+  }
+  .address{
+    height: 36rpx;
+    text-align: left;
+    font-size: 26rpx;
+    line-height: 36rpx;
+    margin-bottom: 26rpx;
+  }
+  .iconfont{
+    color: #003B83;
+    margin-right: 24rpx;
+  }
+}

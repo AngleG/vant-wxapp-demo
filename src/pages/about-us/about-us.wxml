@@ -1,0 +1,8 @@
+<view class="about-us">
+    <image class="logo" src="../../assets/images/logo@2x.png" alt="亚商智讯"></image>
+    <view class="introduce">
+        亚商集团旗下的产业专家智库；通过整合梳理母公司亚商在过往数十年所积累沉淀的高端人脉资源，亚商智讯致力于打造一个由不同行业的顶尖专业人士所构成的咨询网络，并基于此为全球的金融机构、资管机构、企业以及政府提供定制化和模块化的咨询服务。
+    </view>
+    <view class="address"><icon class="iconfont iconwangluo3"></icon>www.abcintel.cn</view>
+    <view class="address"><icon class="iconfont icondizhi"></icon>上海市黄浦区延安东路222号外滩中心6楼</view>
+</view>
