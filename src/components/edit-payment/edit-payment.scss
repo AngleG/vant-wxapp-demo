@@ -12,13 +12,13 @@ page{
     border-radius: 10rpx;
     .form{
       display: block;
-      view{
+      .form-item{
         height: 108rpx;
         padding: 30rpx 20rpx;
         border-bottom: 1px solid #F8F8F8;
         box-sizing: border-box;
         background-color: #ffffff;
-        text{
+        .text{
           float: left;
           font-size: 30rpx;
           color: #9E9DAB;
