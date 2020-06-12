@@ -1,0 +1,38 @@
+.cooperation-process{
+  padding: 0 24rpx;
+  .title{
+    font-size: 26rpx;
+    line-height: 46rpx;
+    color: #2F3757;
+    margin: 30rpx 0 70rpx 0;
+  }
+  .process-item{
+    height: 30rpx;
+    margin-bottom: 28rpx;
+    text{
+      font-size: 26rpx;
+      color: #2F3757;
+    }
+    .iconfont{
+      margin-right: 20rpx;
+      color: #003B83;
+      font-size: 28rpx;
+    }
+    .iconxinxi{
+      font-size: 25rpx;
+    }
+    .iconqitafeiyong, .icon20_muyue{
+      font-size: 30rpx;
+    }
+  }
+  .tip{
+    padding-top: 68rpx;
+    font-size: 24rpx;
+    color: #2F3757;
+    line-height: 40rpx;
+    .phone{
+      font-size: 30rpx;
+      color: #FF8A00;
+    }
+  }
+}

@@ -25,7 +25,7 @@
             <icon class="iconfont icon_zhanghumx"></icon>
             <text>收款信息</text>
         </view>
-        <view>
+        <view bind:tap="navigateToPage" data-link="cooperation-process">
             <icon class="iconfont icon18_sucai"></icon>
             <text>合作流程</text>
         </view>

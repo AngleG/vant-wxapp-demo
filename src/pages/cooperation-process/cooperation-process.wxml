@@ -1,0 +1,11 @@
+<view class="cooperation-process">
+    <view class="title">感谢您加入亚商智讯专家库，您可通过下方说明了解与我们的 合作流程。</view>
+    <view class="process-item" wx:for="{{processList}}" wx:key="index">
+        <icon class="iconfont {{item.iconClass}}"></icon>
+        <text>{{item.text}}</text>
+    </view>
+    <view class="tip">
+        <view>如您在合作中有任何疑问，可联系对接项目负责人</view>
+        <view>或来电咨询：<text class="phone" bind:tap="makePhoneCallHandle">021-6323 0851</text></view>
+    </view>
+</view>

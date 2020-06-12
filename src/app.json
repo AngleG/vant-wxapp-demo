@@ -9,7 +9,8 @@
     "pages/payment/payment",
     "pages/add-payment/add-payment",
     "pages/payment-list/payment-list",
-    "pages/personal/personal"
+    "pages/personal/personal",
+    "pages/cooperation-process/cooperation-process"
   ],
   "window": {
     "backgroundTextStyle": "light",
