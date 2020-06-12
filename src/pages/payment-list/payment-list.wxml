@@ -34,7 +34,7 @@
         </view>
         <view class="add-btn" bind:tap="addPaymentHandle">
             <van-icon name="add-o" color="#003B83" class="weui-icon-add"/>
-            <text>新增收款方式</text>
+            <text class="add-text">新增收款方式</text>
         </view>
     </block>
     <view class="customize-edit-payment" wx:if="{{isEdit}}">
